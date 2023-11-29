@@ -351,9 +351,9 @@ static void aw8622_waveform_data_delay_work(struct work_struct *delay_work) {
 		haptic->center_freq = MID_F0_FREQ;
 	}
 	#endif
-	haptic->wave_max_len = wave_max_len + 4;
+	haptic->wave_max_len = wave_max_len + 6;
 	pr_info("%s wavefile max len = %u\n", __func__, haptic->wave_max_len);
-	//buf_size = (wave_max_len + 4) / 4 ;
+	//buf_size = (wave_max_len + 6) / 6;
 	haptic->wave_vir = dma_alloc_coherent(haptic->dev, haptic->wave_max_len,
 		  &haptic->wave_phy, GFP_KERNEL | GFP_DMA);
 	if (!haptic->wave_vir) {
