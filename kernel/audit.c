@@ -187,7 +187,7 @@ DEFINE_MUTEX(audit_cmd_mutex);
 /* AUDIT_BUFSIZ is the size of the temporary buffer used for formatting
  * audit records.  Since printk uses a 1024 byte buffer, this buffer
  * should be at least that large. */
-#define AUDIT_BUFSIZ 1024
+#define AUDIT_BUFSIZ 2048
 
 /* The audit_buffer is used when formatting an audit record.  The caller
  * locks briefly to get the record off the freelist or to allocate the
