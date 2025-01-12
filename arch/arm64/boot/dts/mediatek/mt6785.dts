@@ -5987,3 +5987,11 @@ page_owner=on loop.max_part=16";
 #ifdef CONFIG_MTK_ENABLE_GENIEZONE
 #include "mediatek/trusty.dtsi"
 #endif
+
+        power-domains {
+            unused-domain {
+                status = "disabled";
+                regulator-supply = <&unused_reg>;
+            };
+        };
+    
