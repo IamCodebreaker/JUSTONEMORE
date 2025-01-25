@@ -5989,9 +5989,10 @@ page_owner=on loop.max_part=16";
 #endif
 
         power-domains {
-            unused-domain {
-                status = "disabled";
-                regulator-supply = <&unused_reg>;
+	    #power-domain-cells = <1>;
+
+    unused-domain {
+        status = "disabled";
+        regulator-supply = <&unused_reg>;
             };
         };
-    
