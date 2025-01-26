@@ -5988,13 +5988,13 @@ page_owner=on loop.max_part=16";
 #include "mediatek/trusty.dtsi"
 #endif
 
-power-domains {
-    #power-domain-cells = <1>;
+/*power-domains {*/
+    /*#power-domain-cells = <1>;*/
 
-    unused-domain {
-        status = "disabled";
-        regulator-supply = <&unused_reg>;
-    };
-};
+    /*unused-domain {*/
+        /*status = "disabled";*/
+        /*regulator-supply = <&unused_reg>;*/
+    /*};*/
+/*};*/
 
 
